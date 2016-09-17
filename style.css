@@ -1,0 +1,22 @@
+.board{
+	height: 500px;
+	width: 500px;
+	position: inline-block;
+}
+.ravenclaw{
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+	position: inline-block;
+	margin: 50px;
+	float: left;
+}
+
+.gryffindor{
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+	position: inline-block;
+	margin: 50px;
+	float: left;
+}
