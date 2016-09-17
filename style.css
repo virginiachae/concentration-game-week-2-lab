@@ -1,22 +1,28 @@
+body{
+	background-image: url("hogwartsbg.jpg");
+}
 .board{
-	height: 500px;
-	width: 500px;
+	height: 1000px;
+	width: 1000px;
 	position: inline-block;
 }
 .card{
-	height: 100px;
-	width: 100px;
+	height: 265px;
+	width: 250px;
 	border: 1px solid black;
 	position: inline-block;
 	margin: 50px;
 	float: left;
+	background-image: url("hogwartspic.jpg");
 }
 
 .gryffindorClicked{
-	background: #db4536;
+	background-image: url("gryffindorpic.jpg");
+	background-size: cover;
 }
 
 .ravenclawClicked{
-	background: #272892;
+	background-image: url("ravenclawpic.jpg");
+	background-size: cover;
 	
 }
