@@ -3,7 +3,7 @@
 	width: 500px;
 	position: inline-block;
 }
-.ravenclaw{
+.card{
 	height: 100px;
 	width: 100px;
 	border: 1px solid black;
@@ -12,11 +12,3 @@
 	float: left;
 }
 
-.gryffindor{
-	height: 100px;
-	width: 100px;
-	border: 1px solid black;
-	position: inline-block;
-	margin: 50px;
-	float: left;
-}
