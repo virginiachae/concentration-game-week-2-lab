@@ -12,3 +12,11 @@
 	float: left;
 }
 
+.gryffindorClicked{
+	background: #db4536;
+}
+
+.ravenclawClicked{
+	background: #272892;
+	
+}
