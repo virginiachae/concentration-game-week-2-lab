@@ -1,35 +1,43 @@
+h1 {
+color: #ffffff;
+font-size: 40px; 
+text-align: center;
+}
 
+h2 {
+color: #ffffff;
+font-size: 25px; 
+text-align: center;
+}body{
+	background-color: #B4D4DC;
+}
 .board{
-	height: 500px;
 	width: 500px;
 	margin: 0 auto;
 
 }
 
 .card{
-	background-image: url("hogwartspic.jpg");
-	background-size: cover;
+	background-color: #ffffff;
 	position: inline-block;
-	height: 249px;
-	width: 248px;
+	height: 226px;
+	width: 226px;
 	border: 1px solid black;
-	margin: 0px;
+	margin: 5px;
 	float: left;
 }
 
 .gryffindorClicked{
-	background-image: url("gryffindorpic.jpg");
-	background-size: cover;
+	background-color: #8DE6FF;
 }
 
 .ravenclawClicked{
-	background-image: url("ravenclawpic.jpg");
-	background-size: cover;
-	
+	background-color: #678790;
 }
 
 h3 {
-color: #000000;
+color: #ffffff;
 font-size: 35px; 
 text-align: center;
 }
+
