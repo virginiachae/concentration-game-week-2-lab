@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Concentration Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+	
+</head>
+<body>
+	<div id = "board">
+	<ul id="card-list" class="card-group"></ul>
+	</div>
+	
+	<script id="board-template" type="text/x-handlebars-template">
+  		{{#each card}}
+    		<li id={{name}} class= "card {{class}}">
+
+    		</li>
+    	{{/each}}	
+	</script>
+	<script src="app.js"></script>
+</body>
+</html>

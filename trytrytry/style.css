@@ -1,0 +1,44 @@
+
+.board{
+	width: 425px;
+	margin: 0 auto;
+
+}
+
+.card{
+	position: inline-block;
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+	margin: 2px;
+	float: left;
+}
+
+.purple.clicked {
+	background-image: url("gryffindorpic.jpg");
+	background-size: cover;
+}
+
+.red.clicked{
+	background-image: url("ravenclawpic.jpg");
+	background-size: cover;
+	
+}
+
+.blue.clicked{
+	background-image: url("harry-potter-rug.jpg");
+	background-size: cover;
+	
+}
+
+.green.clicked{
+	background-image: url("hpcartoon.jpg");
+	background-size: cover;
+	
+}
+
+h3 {
+color: #000000;
+font-size: 35px; 
+text-align: center;
+}

@@ -1,0 +1,31 @@
+body{
+	background-image: url("hogwartsbg.jpg");
+}
+ul{
+	list-style-type: none;
+}
+#board{
+	height: 500px;
+	width: 500px;
+	position: inline-block;
+}
+.card{
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+	margin: 50px;
+	float: left;
+	background-image: url("hogwartspic.jpg");
+	background-size: cover;
+}
+
+.gryffindorClicked{
+	background-image: url("gryffindorpic.jpg");
+	background-size: cover;
+}
+
+.ravenclawClicked{
+	background-image: url("ravenclawpic.jpg");
+	background-size: cover;
+	
+}
