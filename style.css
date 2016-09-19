@@ -1,8 +1,8 @@
 
 .board{
-	background-image: url("hogwartsbg.jpeg");
 	height: 500px;
 	width: 500px;
+	margin: 0 auto;
 
 }
 
@@ -10,10 +10,10 @@
 	background-image: url("hogwartspic.jpg");
 	background-size: cover;
 	position: inline-block;
-	height: 100px;
-	width: 100px;
+	height: 249px;
+	width: 248px;
 	border: 1px solid black;
-	margin: 70px;
+	margin: 0px;
 	float: left;
 }
 
