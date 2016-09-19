@@ -15,7 +15,7 @@ $(".lightBlue").click(function(){
 });
 
 		
-		s
+		
 function checkWinner() {
 	for (var i=0; i<=allCards.length; i++);
 		if (($("#darkBlueOne").hasClass("darkBlueClicked")) 
