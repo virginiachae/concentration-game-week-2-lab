@@ -1,40 +1,40 @@
 var allCards = $(".card");
 var delayStartFC = null;
 
-$(".ravenclaw").click(function(){
-	console.log("sanity check: ravenclaw clicked!");
-	$(this).addClass( "ravenclawClicked" );
+$(".darkBlue").click(function(){
+	console.log("sanity check: darkBlue clicked!");
+	$(this).addClass( "darkBlueClicked" );
 	checkWinner();
 });
 
-$(".gryffindor").click(function(){
-	console.log("sanity check: gryffindor clicked!");
-	$(this).addClass("gryffindorClicked");
+$(".lightBlue").click(function(){
+	console.log("sanity check: lightBlue clicked!");
+	$(this).addClass("lightBlueClicked");
 	checkWinner();
 
 });
 
 		
-		
+		s
 function checkWinner() {
 	for (var i=0; i<=allCards.length; i++);
-		if (($("#ravenclawOne").hasClass("ravenclawClicked")) 
-			&& ($("#ravenclawTwo").hasClass("ravenclawClicked")) 
-			&& ($("#gryffindorOne").hasClass("gryffindorClicked")) 
-			&& ($("#gryffindorTwo").hasClass("gryffindorClicked"))){
+		if (($("#darkBlueOne").hasClass("darkBlueClicked")) 
+			&& ($("#darkBlueTwo").hasClass("darkBlueClicked")) 
+			&& ($("#lightBlueOne").hasClass("lightBlueClicked")) 
+			&& ($("#lightBlueTwo").hasClass("lightBlueClicked"))){
 				$('h3').append( "YOU WON!" );
 		}
-		else if (($("#ravenclawOne").hasClass("ravenclawClicked")) 
-			&& ($("#ravenclawTwo").hasClass("ravenclawClicked"))){
-			console.log("yaaaaas! you found all the ravenclaws!");
+		else if (($("#darkBlueOne").hasClass("darkBlueClicked")) 
+			&& ($("#darkBlueTwo").hasClass("darkBlueClicked"))){
+			console.log("yaaaaas! you found all the darkBlues!");
 		}
-		else if (($("#gryffindorOne").hasClass("gryffindorClicked")) 
-			&& ($("#gryffindorTwo").hasClass("gryffindorClicked"))){
-			console.log("yaaaaas! you found all the gryffindors");
+		else if (($("#lightBlueOne").hasClass("lightBlueClicked")) 
+			&& ($("#lightBlueTwo").hasClass("lightBlueClicked"))){
+			console.log("yaaaaas! you found all the lightBlues");
 		}
-		else if (($(".card").hasClass("ravenclawClicked")) 
-				&& ($(".card").hasClass("gryffindorClicked"))){
-				setTimeout(function(){$(".card").removeClass ("ravenclawClicked gryffindorClicked")},1000);
+		else if (($(".card").hasClass("darkBlueClicked")) 
+				&& ($(".card").hasClass("lightBlueClicked"))){
+				setTimeout(function(){$(".card").removeClass ("darkBlueClicked lightBlueClicked")},1000);
 			
 			
 

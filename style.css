@@ -27,11 +27,11 @@ text-align: center;
 	float: left;
 }
 
-.gryffindorClicked{
+.lightBlueClicked{
 	background-color: #8DE6FF;
 }
 
-.ravenclawClicked{
+.darkBlueClicked{
 	background-color: #678790;
 }
 
