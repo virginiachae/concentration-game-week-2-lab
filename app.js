@@ -1,3 +1,6 @@
+var allCards = $(".card");
+var delayStartFC = null;
+
 $(".ravenclaw").click(function(){
 	console.log("sanity check: ravenclaw clicked!");
 	$(this).addClass( "ravenclawClicked" );
@@ -8,18 +11,18 @@ $(".gryffindor").click(function(){
 	console.log("sanity check: gryffindor clicked!");
 	$(this).addClass("gryffindorClicked");
 	checkWinner();
+
 });
 
 		
 		
 function checkWinner() {
-	var allCards = $(".card");
 	for (var i=0; i<=allCards.length; i++);
-		if (($(".card").hasClass("ravenclawClicked")) 
+		if (($("#ravenclawOne").hasClass("ravenclawClicked")) 
 			&& ($("#ravenclawTwo").hasClass("ravenclawClicked")) 
-			&& ($(".card").hasClass("gryffindorClicked")) 
+			&& ($("#gryffindorOne").hasClass("gryffindorClicked")) 
 			&& ($("#gryffindorTwo").hasClass("gryffindorClicked"))){
-			window.alert("GAME OVER!")
+				$('h3').append( "YOU WON!" );
 		}
 		else if (($("#ravenclawOne").hasClass("ravenclawClicked")) 
 			&& ($("#ravenclawTwo").hasClass("ravenclawClicked"))){
@@ -31,8 +34,10 @@ function checkWinner() {
 		}
 		else if (($(".card").hasClass("ravenclawClicked")) 
 				&& ($(".card").hasClass("gryffindorClicked"))){
-			window.alert('Not a match! Please try again!');
-			$(".card").removeClass ("ravenclawClicked gryffindorClicked")
+				setTimeout(function(){$(".card").removeClass ("ravenclawClicked gryffindorClicked")},1000);
+			
+			
+
 		}
 }
 
