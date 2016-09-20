@@ -1,42 +1,48 @@
-var data = {
-	cards: [
+function Card($el, img) {
+	this.ele = $el;
+	this.image = img;
+}
+var allCards = []
+
+var cards = [
+	{
+		$el: '$("#ravenclawOne")',
+		img: 'ravenclawpic.jpg'
+	},
+
+	{
+		$el: $('#gryffindorOne'),
+		img: 'gryffindorpic.jpg'
+	},
 		{
-			name: "ravenclawOne",
-			class: "ravenclaw"
-		},
-		{
-			name: "gryffindorOne",
-			class: "gryffindor"
-		},
-		{
-			name: "ravenclawTwo",
-			class: "ravenclaw"
-		},
-		{
-			name: "gryffindorTwo",
-			class: "gryffindor"
-		}	
-	]
+		$el: $('#ravenclawOne'),
+		img: 'ravenclawpic.jpg'
+	},
+	{
+		$el: $('#gryffindorTwo'),
+		img: 'gryffindorpic.jpg'
+	}	
+];
+
+
+for (var i =0; i<cards.length; i++){
+	new Card ('cards[i].name');
+	allCards.push(new Card(cards[i].$el, cards[i].img));
 };
 
+for (var i =0; i<allCards.length; i++){
+	//how do I get allCards[i].ele to be defined? 
+	allCards[i].ele.click(function() {
+		console.log('sanity check: clicked!')
+		allCards[i].ele.html('<img src="' + allCards[i].image + '" >')
+	});	
+	};
 
-function Card(cardName) {
-	this.name = cardName;
-}
 
-Card.prototype.faceDown = function(){
-	$(document).ready(function(){
-		var source = $("#board-template").html();
-		console.log('sanity check:', source);
-		var template = Handlebars.compile(source);
-		var cardHtml = template({card: data.cards}); 
-		console.log('sanity check 2:', cardHtml);
-		$("#card-list").append(cardHtml); 
-		}); 
-}
 
-var allCards = []
-for (var i =0; i<data.cards.length; i++){
-	new Card("data.cards[i].name");
-	allCards.push(new Card(data.cards[i].name));
-}
+
+
+/** characters.forEach(function(character){
+ +    character.$el.click(function() {
+ +      $character_target.html('<img src="' + character.img + '">');
+ +    })*/
